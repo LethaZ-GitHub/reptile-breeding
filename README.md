@@ -4,6 +4,9 @@
 
 首期核心物种：**睫角守宫、猪鼻蛇**（架构预留自定义物种）。
 
+> 📦 **GitHub 仓库**：https://github.com/LethaZ-GitHub/reptile-breeding （公开，Apache-2.0 + The Commons Clause）
+> 本地推送走 SSH（`ssh.github.com:443`）；HTTPS 通道在本机网络不可用。
+
 ---
 
 ## 一、快速开始
