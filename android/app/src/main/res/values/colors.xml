@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- v3.3：启动页配色 -->
+    <color name="splashBg">#FFFFFF</color>
+    <color name="splashText">#3A4A44</color>
+    <color name="splashLink">#2E9E6B</color>
+    <!-- 1.0.0 正式版：「一键捐助」按钮文字色（按钮背景为 splashLink 品牌绿） -->
+    <color name="splashBtnText">#FFFFFF</color>
+</resources>

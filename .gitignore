@@ -1,0 +1,22 @@
+# 本地构建工具链（JDK/Android SDK/Gradle 缓存）
+.build/
+
+# 依赖与构建产物
+node_modules/
+android/app/build/
+android/build/
+android/.gradle/
+android/local.properties
+android/app/src/main/assets/public/
+www/
+*.apk
+*.keystore
+
+# 本地运行产物
+.tmp/
+
+# 测试截图与日志
+test/**/*.png
+
+# WorkBuddy 项目数据
+.workbuddy/

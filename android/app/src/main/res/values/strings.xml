@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">养个爬</string>
+    <string name="title_activity_main">养个爬</string>
+    <string name="package_name">com.reptile.breeding</string>
+    <string name="custom_url_scheme">com.reptile.breeding</string>
+
+    <!-- v3.3：启动页文案（logo 改用 drawable/splash_logo.png，源自工作空间 logo-g.png） -->
+    <string name="splash_slogan">让每个爬友便捷养爬</string>
+    <string name="splash_donate_hint">本软件全功能免费，若支持可捐助</string>
+    <!-- 1.0.0 正式版：启动页「一键捐助」按钮（爱发电主页） -->
+    <string name="splash_donate_btn">一键捐助</string>
+    <string name="splash_donate_url">https://afdian.com/a/c7h31</string>
+    <string name="splash_skip">跳过</string>
+</resources>

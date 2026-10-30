@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1.0.0 正式版：启动页「一键捐助」按钮背景（品牌绿圆角胶囊） -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="18dp" />
+    <solid android:color="@color/splashLink" />
+</shape>

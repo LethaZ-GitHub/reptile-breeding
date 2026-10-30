@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v3.3：安卓启动页（原生层，WebView 加载前显示）
+     正中 logo（logo-g.png）→ 软件名「养个爬」→ 小字标语「让每个爬友便捷养爬」
+     → 「本软件全功能免费，若支持可捐助」→ 「一键捐助」按钮（1.0.0 正式版：爱发电主页）
+     右上角「跳过」按钮：启动 3 秒后才淡入出现；无操作 5 秒自动进入主界面。 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splashBg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp">
+
+        <ImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/splash_logo" />
+
+        <TextView
+            android:id="@+id/splashTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/app_name"
+            android:textColor="@color/splashText"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/splashSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/splash_slogan"
+            android:textColor="@color/splashText"
+            android:textSize="13sp"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/splashDonateHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/splash_donate_hint"
+            android:textColor="@color/splashText"
+            android:textSize="13sp"
+            android:includeFontPadding="false" />
+
+        <!-- 1.0.0 正式版：捐助入口由纯文本链接改为「一键捐助」按钮 -->
+        <Button
+            android:id="@+id/splashDonateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:background="@drawable/splash_donate_bg"
+            android:text="@string/splash_donate_btn"
+            android:textColor="@color/splashBtnText"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/splashSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="16dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:alpha="0"
+        android:background="@android:color/transparent"
+        android:text="@string/splash_skip"
+        android:textColor="@color/splashText"
+        android:textSize="13sp"
+        android:stateListAnimator="@null" />
+
+</FrameLayout>

@@ -1,0 +1,23 @@
+{
+  "name": "reptile-breeding",
+  "version": "1.0.0",
+  "private": true,
+  "description": "养个爬 — 本地优先（IndexedDB），Web + PWA + Capacitor App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:3001": "node server.js --port=3001",
+    "icons": "node tools/make-icons.mjs",
+    "web:sync": "node tools/sync-web.mjs",
+    "app:install-deps": "npm i -D @capacitor/cli@6 @capacitor/core@6 @capacitor/android@6",
+    "app:add": "npx cap add android",
+    "app:sync": "npx cap sync android",
+    "app:open": "npx cap open android",
+    "app:apk": "npx cap sync android && cd android && gradlew.bat assembleDebug"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.2",
+    "@capacitor/cli": "^6.2.2",
+    "@capacitor/core": "^6.2.2"
+  }
+}

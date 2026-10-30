@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- v3.5：背景层改用 icon.png 的青绿渐变位图（mipmap-*/ic_launcher_bg.png），
+     前景层为 icon.png 提取的白色守宫 —— 与安装包图标完全一致。 -->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@mipmap/ic_launcher_bg"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>
